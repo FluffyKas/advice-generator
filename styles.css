@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+
+:root {
+
+/* Colors */
+
+/* Primary */
+
+--clr-light-cyan: hsl(193, 38%, 86%);
+--clr-neon-green: hsl(150, 100%, 66%);
+
+/* Neutral */
+
+--gray-blue-400: hsl(217, 19%, 38%);
+--gray-blue-700: hsl(217, 19%, 24%);
+--gray-blue-900: hsl(218, 23%, 16%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Manrope', sans-serif;
+  background: var(--gray-blue-900);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.advice-card {
+  background: var(--gray-blue-700);
+  border-radius: 10px;
+  margin-inline: 1rem;
+  max-width: 30rem;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.advice-id {
+  color: var(--clr-neon-green);
+  font-size: .75rem;
+  letter-spacing: 3px;
+  padding-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+
+.advice-body {
+  color: white;
+  font-size: 1.5rem;
+  padding-bottom: 1.25rem;
+}
+
+.divider {
+  padding-bottom: 2rem;
+}
+
+.advice-btn {
+  position: absolute;
+  z-index: 1;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX( -50%);
+}
+
+.advice-btn::before {
+  content: "";
+  background: var(--clr-neon-green);
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
