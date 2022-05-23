@@ -92,6 +92,7 @@ h6 {
   text-align: center;
   padding: 3rem 2rem;
   position: relative;
+  animation: fadeIn .5s ease-in;
 }
 
 .advice-id {
@@ -138,4 +139,18 @@ h6 {
 
 .advice-btn:hover  {
   box-shadow: 0 0 45px 6px var(--clr-neon-green);
+}
+
+/* Keyframes */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
