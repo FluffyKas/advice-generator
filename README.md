@@ -14,7 +14,6 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -22,11 +21,12 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 Users should be able to:
 
--
+- Generate new advice by clicking on the button
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshots/advice-generator-mobile.png)
+![](./screenshots/advice-generator-desktop.png)
 
 ### Links
 
@@ -38,17 +38,16 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
 - CSS Grid
+- CSS keyframes
 - Mobile-first workflow
+- [Advice Slip JSON API](https://api.adviceslip.com/#object-slip)
 
 ### What I learned
 
-### Continued development
+This challenge was a speedrun for me to test how quickly I could solve it (it was surprisingly quick, both CSS and JS part). I didn't learn anything new from it, although practicing fetch is always useful!
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-## Acknowledgments
+- Frontend Mentor - [@FluffyKas](https://www.frontendmentor.io/profile/FluffyKas)
+- Twitter - [@fluffykas](https://www.twitter.com/FluffyKas)
