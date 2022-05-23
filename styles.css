@@ -86,6 +86,7 @@ h6 {
 .advice-card {
   background: var(--gray-blue-700);
   border-radius: 10px;
+  box-shadow: 2px 2px 25px 2px hsla(218, 23%, 9%, .4);
   margin-inline: 1rem;
   max-width: 30rem;
   text-align: center;
