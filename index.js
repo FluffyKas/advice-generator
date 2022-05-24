@@ -11,7 +11,7 @@ adviceBtn.addEventListener("click", () => {
 });
 
 function setAdvice() {
-  fetch("https://api.adviceslip.com/advice")
+  fetch("https://api.adviceslip.com/advice", { cache: "no-cache" })
     .then(res => res.json())
     .then(data => {
       const advice = data.slip;
